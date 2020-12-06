@@ -1,0 +1,52 @@
+
+.side-drawer {
+    height: 100%;
+    background: white;
+    box-shadow: 0px 0px 0px rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 30%;
+    max-width: 350px;
+    z-index: 200;
+    transform: translateX(500%);
+    transition: transform 0.3s ease-out;  
+}
+
+.side-drawer.open {
+    transform: translateX(235%);
+  
+}
+.side-drawer ul {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: initial;
+    text-align: right;
+}
+
+.side-drawer li {
+    margin: 2rem 3rem 2rem 0;
+    
+}
+
+.side-drawer .menu-item {
+    color: #dd5d22;
+    text-decoration: none;
+    font-size: 2.92rem;
+    font-weight: 900;
+}
+.side-drawer a {
+    color: #521751;
+    text-decoration: none;
+    font-size: 4vw;
+    font-weight: 500;
+}
+
+.side-drawer a:hover,
+.side-drawer a:active {
+    color: #fa923f;
+    font-weight: 900;
+    font-size: 2.5rem;
+}

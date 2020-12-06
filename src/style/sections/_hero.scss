@@ -1,0 +1,343 @@
+#hero {
+  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  border-bottom: 0px;
+  background: $white-color;
+  font-weight: 400;
+  color: $dark-blue-text;
+  padding: 0rem 5.6rem;
+  margin-bottom: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+
+  .fade-in {
+    animation: fadeIn ease 10s;
+    -webkit-animation: fadeIn ease 10s;
+    -moz-animation: fadeIn ease 10s;
+    -o-animation: fadeIn ease 10s;
+    -ms-animation: fadeIn ease 10s;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+  }
+}
+
+.fade-out {
+  animation: fadeOut ease 8s;
+  -webkit-animation: fadeOut ease 8s;
+  -moz-animation: fadeOut ease 8s;
+  -o-animation: fadeOut ease 8s;
+  -ms-animation: fadeOut ease 8s;
+}
+@keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-moz-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-o-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-ms-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+}}
+
+  // If you want to set a background image on the hero section, uncomment these with yout custom image
+
+  // background: url("/src/assets/wa12e.png");
+  // background-position: center;
+  // background-size: cover; 
+
+  @include respond(phone) {
+    padding: 0rem $default-font-size;
+  }
+
+  .hero-title {
+    font-size: 5.6rem;
+    font-weight: 700;
+    margin-bottom: 3.2rem;
+    text-align: left;
+
+    @include respond(tab-land) {
+      font-size: 4rem;
+    }
+    @include respond(tab-port) {
+      font-size: 3.6rem;
+      text-align: center;
+    }
+    @include respond(phone) {
+      font-size: 3.5rem;
+      line-height: 1.5;
+    }
+    @include respond(phone-xs) {
+      font-size: 2.8rem;
+    }
+  }
+
+  .hero-cta {
+    display: flex;
+
+    @include respond(tab-port) {
+      justify-content: center;
+    }
+
+    & a {
+      font-size: 2.4rem;
+
+      @include respond(phone) {
+        font-size: 2rem;
+      }
+    }
+  }
+  
+}
+
+
+// #nav-wrap ul,
+// #nav-wrap li,
+// #nav-wrap a {
+//   margin: 0;
+//   padding: 0;
+//   border: none;
+//   outline: none;
+// }
+#nav-wrap{
+  ul, li, a{
+    margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  }
+}
+
+/* nav-wrap */
+#nav-wrap {
+  font: 12px 'opensans-bold', sans-serif;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  margin: 0 auto;
+  z-index: 100;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+.opaque {
+  background-color: #333;
+}
+
+/* hide toggle button */
+#nav-wrap > a.mobile-btn {
+  display: none;
+}
+
+ul#nav {
+  min-height: 48px;
+  width: auto;
+
+  /* center align the menu */
+  text-align: center;
+}
+// ul#nav li {
+//   position: relative;
+//   list-style: none;
+//   height: 48px;
+//   display: inline-block;
+// }
+ul#nav{ 
+  li {
+  position: relative;
+  list-style: none;
+  height: 48px;
+  display: inline-block;
+  }
+}
+
+/* Links */
+// ul#nav li a {
+//   /* 8px padding top + 8px padding bottom + 32px line-height = 48px */
+
+//   display: inline-block;
+//   padding: 8px 13px;
+//   line-height: 32px;
+//   text-decoration: none;
+//   text-align: left;
+//   color: #fff;
+
+//   -webkit-transition: color 0.2s ease-in-out;
+//   -moz-transition: color 0.2s ease-in-out;
+//   -o-transition: color 0.2s ease-in-out;
+//   -ms-transition: color 0.2s ease-in-out;
+//   transition: color 0.2s ease-in-out;
+// }
+
+ul#nav {
+  li{
+    a{
+       /* 8px padding top + 8px padding bottom + 32px line-height = 48px */
+
+  display: inline-block;
+  padding: 8px 13px;
+  line-height: 32px;
+  text-decoration: none;
+  text-align: left;
+  color: #fff;
+
+  -webkit-transition: color 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+    }
+  }
+}
+
+// ul#nav li a:active {
+//   background-color: transparent !important;
+// }
+ul#nav {
+  li {
+    a: active {
+      background-color: transparent !important;
+    }
+  }
+}
+// ul#nav li.current a {
+//   color: #fe6928;
+// }
+ul#nav {
+  li.current {
+    a{
+      color: #fe6928;
+
+    }
+  }
+}
+
+/* scrolldown link */
+header {
+  .scrolldown {
+    a {
+      position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -29px;
+  color: #fff;
+  display: block;
+  height: 42px;
+  width: 42px;
+  font-size: 42px;
+  line-height: 42px;
+  color: #fff;
+  border-radius: 100%;
+
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+    }
+  }
+}
+// header .scrolldown a {
+//   position: absolute;
+//   bottom: 30px;
+//   left: 50%;
+//   margin-left: -29px;
+//   color: #fff;
+//   display: block;
+//   height: 42px;
+//   width: 42px;
+//   font-size: 42px;
+//   line-height: 42px;
+//   color: #fff;
+//   border-radius: 100%;
+
+//   -webkit-transition: all 0.3s ease-in-out;
+//   -moz-transition: all 0.3s ease-in-out;
+//   -o-transition: all 0.3s ease-in-out;
+//   transition: all 0.3s ease-in-out;
+// }
+// .scrolldown a:hover {
+//   color: #0762f9;
+// }
+.scrolldown {
+  a:hover {
+    color: #0762f9
+  }
+}
